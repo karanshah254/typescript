@@ -7,8 +7,17 @@ import Input from './components/Input';
 import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
+import Counter from './components/states/Counter';
 import LoggedIn from './components/states/LoggedIn';
+// import User from './components/states/User';
 import Status from './components/Status';
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import Box from './components/context/Box';
+import { UserContextProvider } from './components/context/UserContext';
+import User from './components/context/User';
+
+
+
 
 function App() {
   const personName = {
@@ -58,7 +67,15 @@ function App() {
         color: 'red',
         backgroundColor: 'lightgray'
       }} /> */}
-      <LoggedIn />
+      {/* <LoggedIn /> */}
+      {/* <User name='karan' email='karan@mail.com' /> */}
+      {/* <Counter /> */}
+      {/* <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider> */}
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
