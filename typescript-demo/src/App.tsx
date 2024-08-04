@@ -7,7 +7,7 @@ import Input from './components/Input';
 import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
-import Counter from './components/states/Counter';
+// import Counter from './components/states/Counter';
 import LoggedIn from './components/states/LoggedIn';
 // import User from './components/states/User';
 import Status from './components/Status';
@@ -15,6 +15,9 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import Box from './components/context/Box';
 import { UserContextProvider } from './components/context/UserContext';
 import User from './components/context/User';
+import { DomRef } from './components/effect/DomRef';
+import { MutableRef } from './components/effect/MutableRef';
+import { Counter } from './components/class/Counter';
 
 
 
@@ -73,9 +76,12 @@ function App() {
       {/* <ThemeContextProvider>
         <Box />
       </ThemeContextProvider> */}
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+      {/* <DomRef/>
+      <MutableRef/> */}
+      <Counter message='The count value is' />
     </div>
   );
 }
