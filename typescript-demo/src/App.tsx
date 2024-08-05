@@ -18,6 +18,12 @@ import User from './components/context/User';
 import { DomRef } from './components/effect/DomRef';
 import { MutableRef } from './components/effect/MutableRef';
 import { Counter } from './components/class/Counter';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
+import { List } from './components/generics/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
+import { Toast } from './components/templateLiterals/Toast';
+import { CustomButton } from './components/html/Button';
 
 
 
@@ -81,7 +87,41 @@ function App() {
       </UserContextProvider> */}
       {/* <DomRef/>
       <MutableRef/> */}
-      <Counter message='The count value is' />
+      {/* <Counter message='The count value is' /> */}
+      {/* <Private isLoggedIn={true} component={Profile} /> */}
+      {/* <List
+        items={['Batman', 'Superman', 'Ironman']}
+        onClick={(item) => console.log(item)}
+      />
+      <List
+        items={[1, 2, 3]}
+        onClick={(item) => console.log(item)}
+      /> */}
+      {/* <List
+        items={[
+          {
+            id: 1,
+            first: 'Bruce',
+            last: 'Wayne'
+          },
+          {
+            id: 2,
+            first: 'Tony',
+            last: 'Stark'
+          },
+          {
+            id: 3,
+            first: 'Tom',
+            last: 'Cruise'
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      /> */}
+      {/* <RandomNumber value={10} isPositive /> */}
+      {/* <Toast position='center-bottom' /> */}
+      <CustomButton variant='primary'>
+          Primary Button
+      </CustomButton>
     </div>
   );
 }
