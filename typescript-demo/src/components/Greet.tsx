@@ -4,7 +4,7 @@ type GreetProps = {
     age: number
 }
 
-const greet = (props: GreetProps) => {
+const Greet = (props: GreetProps) => {
     return (
         <div>
             <h3>
@@ -14,4 +14,4 @@ const greet = (props: GreetProps) => {
     )
 }
 
-export default greet
+export default Greet

@@ -24,6 +24,7 @@ import { List } from './components/generics/List';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateLiterals/Toast';
 import { CustomButton } from './components/html/Button';
+import { Text } from './components/polymorphic/Text';
 
 
 
@@ -119,9 +120,21 @@ function App() {
       /> */}
       {/* <RandomNumber value={10} isPositive /> */}
       {/* <Toast position='center-bottom' /> */}
-      <CustomButton variant='primary'>
+      {/* <CustomButton variant='primary'>
           Primary Button
-      </CustomButton>
+      </CustomButton> */}
+      <Text as='li' size='small' color='primary'>
+        List item1
+      </Text>
+      <Text as='p' size='medium'>
+        Paragraph
+      </Text>
+      <Text as='h1' size='large' color='secondary'>
+        Heading
+      </Text>
+      <Text as='label' size='small' color='primary'>
+        Label
+      </Text>
     </div>
   );
 }
